@@ -1,0 +1,41 @@
+Profile:
+ ✔ Show Profile @done (16-11-08 15:43)
+ ☐ Edit Profile
+
+
+Instructor:
+ ✔ Apply as Instructor @done (16-11-13 06:30)
+ ✔ Instructor Profile @done (16-11-12 18:57)
+
+
+
+Course:
+ ✔ Add Course @done (16-10-20 16:02)
+ ✔ Add Category @done (16-10-20 16:03)
+ ✔ Add Subcategory @done (16-10-20 16:03)
+ ✔ add-section.php @done (16-10-20 19:00)
+ ✔ Add Lectures @critical @done (16-10-22 19:21)
+ ✔ Show Course @done (15-10-26 16:29)
+ ✔ Buy Course @done (16-11-01 18:26)
+ ✔ Admin panel interaction for course buy @done (16-11-01 19:11)
+ ✔ Play Course @done (16-11-12 18:58)
+ ☐ Add course - Check if instructor
+
+Login:
+ ✔ Registration @done (16-10-11 16:26)
+ ✔ Login @done (16-10-20 16:02)
+ ✔ Session Refactoring with database @done (16-11-13 12:49)
+
+
+Admin Dashboard:
+ ☐ Show all Profile with pagination
+ ☐ Search User profile
+ ☐ Show todays sell
+
+ Additional:
+   ☐ Rating
+   ✔ Same course buy verification (Pending check, Buy Check) @done (16-11-08 15:44)
+   ✔ Category View @done (16-11-12 20:42)
+   ✔ Sub Category View @done (16-11-12 20:45)
+   ☐ Author View
+   ✔ Homepage @done (16-11-13 18:13)
