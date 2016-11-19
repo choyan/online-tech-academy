@@ -97,7 +97,7 @@ $user_id = $_SESSION['id'];
                                 $temp = explode(".", $file_name);
                                 $newfilename = round(microtime(true)) . '.' . end($temp);
                                 $target_file = $target_dir . basename($newfilename);
-                                // $timestamp = date('Y-m-d H:i:s');
+                                $timestamp = date('Y-m-d H:i:s');
 
 
                                 if (move_uploaded_file($_FILES["banner_img"]["tmp_name"], $target_file)) {

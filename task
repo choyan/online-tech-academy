@@ -1,6 +1,6 @@
 Profile:
  ✔ Show Profile @done (16-11-08 15:43)
- ☐ Edit Profile
+ ✔ Edit Profile @done (16-11-17 12:00)
 
 
 Instructor:
@@ -19,7 +19,7 @@ Course:
  ✔ Buy Course @done (16-11-01 18:26)
  ✔ Admin panel interaction for course buy @done (16-11-01 19:11)
  ✔ Play Course @done (16-11-12 18:58)
- ☐ Add course - Check if instructor
+ ✔ Add course - Check if instructor @done (16-11-17 12:00)
 
 Login:
  ✔ Registration @done (16-10-11 16:26)
@@ -28,14 +28,13 @@ Login:
 
 
 Admin Dashboard:
- ☐ Show all Profile with pagination
- ☐ Search User profile
- ☐ Show todays sell
+ ✔ Show all Profile with pagination @done (16-11-17 12:00)
+ ✔ Search User profile @done (16-11-17 12:00)
+ ✔ Show todays sell @done (16-11-17 12:00)
 
  Additional:
-   ☐ Rating
    ✔ Same course buy verification (Pending check, Buy Check) @done (16-11-08 15:44)
    ✔ Category View @done (16-11-12 20:42)
    ✔ Sub Category View @done (16-11-12 20:45)
-   ☐ Author View
+   ✔ Author View @done (16-11-17 12:00)
    ✔ Homepage @done (16-11-13 18:13)

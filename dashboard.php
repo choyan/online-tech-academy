@@ -15,7 +15,7 @@ if(is_admin($con, $user_id) == 0) {
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Add Category</title>
+        <title>Dashboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -40,9 +40,10 @@ if(is_admin($con, $user_id) == 0) {
                         <ul>
                             <li><a href="search.php"><i class="fa fa-angle-double-right"></i> Search Profile</a></li>
                             <li><a href="todays-sell.php"> <i class="fa fa-angle-double-right"></i> Todays Sell</a></li>
-                            <li><a href="new-course-pending.php"><i class="fa fa-angle-double-right"></i>New Course Pending Request</a></li>
+                            <li><a href="new-course-pending.php"><i class="fa fa-angle-double-right"></i> New Course Pending Request</a></li>
                             <li><a href="list-pending-request.php"><i class="fa fa-angle-double-right"></i> Payment Pending Request</a></li>
-                            <li><a href="instructor-payment.php"><i class="fa fa-angle-double-right"></i> Instructor Monthly Payment</a></li>
+                            <li><a href="instructor-payment.php"><i class="fa fa-angle-double-right"></i> Instructor Payment</a></li>
+                            <li><a href="payment-history.php"><i class="fa fa-angle-double-right"></i> Payment History</a></li>
                             <li><a href="instructor-pending.php"><i class="fa fa-angle-double-right"></i> Instructor Request Pending</a></li>
                             <li>
                                 <a href="#" class="expander">
@@ -88,15 +89,27 @@ if(is_admin($con, $user_id) == 0) {
                                 <div class="action">
                                     <h2>
                                         <?php 
-                                            echo $total['total'];
-                                         ?>৳
+                                            if($total['total'] == 0) {
+                                                echo "No";
+                                            } else {
+                                                echo "{$total['total']}৳";  
+                                            }
+                                         ?>
                                     </h2>
                                     <div>Sell</div>                      
                                 </div>
                             </div>
                             <div class="grid-4">
                                 <div class="action">
-                                    <h2><?php echo $total['total']*0.4; ?>৳</h2>
+                                    <h2>
+                                        <?php 
+                                            if($total['total'] == 0) {
+                                                echo "No";
+                                            } else {
+                                                echo "{$total['total']}*0.4 ৳";
+                                            }
+                                        ?>
+                                     </h2>
                                     <div>Reveneue</div>
                                 </div>
                             </div>
