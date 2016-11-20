@@ -43,24 +43,24 @@ if(is_admin($con, $user_id) == 0) {
                             <li><a href="new-course-pending.php"><i class="fa fa-angle-double-right"></i> New Course Pending Request</a></li>
                             <li><a href="list-pending-request.php"><i class="fa fa-angle-double-right"></i> Payment Pending Request</a></li>
                             <li><a href="instructor-payment.php"><i class="fa fa-angle-double-right"></i> Instructor Payment</a></li>
-                            <li><a href="payment-history.php"><i class="fa fa-angle-double-right"></i> Payment History</a></li>
-                            <li><a href="instructor-pending.php"><i class="fa fa-angle-double-right"></i> Instructor Request Pending</a></li>
+                            <li><a href="payment-history.php"><i class="fa fa-angle-double-right"></i> Instructor Payment History</a></li>
+                            <li><a href="instructor-pending.php"><i class="fa fa-angle-double-right"></i> Accept as Instructor Request Pending</a></li>
                             <li>
                                 <a href="#" class="expander">
-                                    <i class="fa fa-angle-double-right"></i>Category
+                                    <i class="fa fa-angle-double-right"></i> Category
                                 </a>
                                 <ul class="content">
-                                    <li><a href="add-category.php"><i class="fa fa-angle-double-right"></i>Add Category</a></li>
-                                    <li><a href="delete-category.php"><i class="fa fa-angle-double-right"></i>Delete Category</a></li>
+                                    <li><a href="add-category.php"><i class="fa fa-angle-double-right"></i> Add Category</a></li>
+                                    <li><a href="delete-category.php"><i class="fa fa-angle-double-right"></i> Delete Category</a></li>
                                 </ul>
                             </li>
                             <li>
                                 <a href="#" class="expander">
-                                    <i class="fa fa-angle-double-right"></i>Sub-Category
+                                    <i class="fa fa-angle-double-right"></i> Sub-Category
                                 </a>
                                 <ul class="content">
-                                    <li><a href="add-subcategory.php"><i class="fa fa-angle-double-right"></i>Add Sub-Category</a></li>
-                                    <li><a href="delete-subcategory.php"><i class="fa fa-angle-double-right"></i>Delete Sub-Category</a></li>
+                                    <li><a href="add-subcategory.php"><i class="fa fa-angle-double-right"></i> Add Sub-Category</a></li>
+                                    <li><a href="delete-subcategory.php"><i class="fa fa-angle-double-right"></i> Delete Sub-Category</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -106,7 +106,8 @@ if(is_admin($con, $user_id) == 0) {
                                             if($total['total'] == 0) {
                                                 echo "No";
                                             } else {
-                                                echo "{$total['total']}*0.4 ৳";
+                                            	$rev = $total['total'] * 0.4;
+                                                echo "$rev ৳";
                                             }
                                         ?>
                                      </h2>

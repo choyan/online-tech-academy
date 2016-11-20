@@ -5,7 +5,8 @@ if(!isset($_SESSION['id'])) {
 }
 $student_id = $_SESSION['id'];
 include 'functions.php';
-
+$course_id = $_GET['course'];
+$course_title = $con->query("SELECT course_title FROM course_info WHERE id='$course_id'")->fetch_object()->course_title;
 ?> 
 
 <!doctype html>
@@ -13,7 +14,7 @@ include 'functions.php';
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Your website title</title>
+        <title><?= $course_title ?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -70,7 +71,7 @@ include 'functions.php';
                                 if((mysqli_num_rows($check_course_allowance) > 0) || $course_info['user_id'] == $user_id ) {
                                     ?>
                                 <div class="title-area">
-                                    <h1><?= $course_info['course_title']; ?></h1>
+                                    <h1><?= $lecture_info['title']; ?></h1>
                                     <div class="desc">
                                         <?php 
                                             $date = date_create($course_info['published']);
@@ -124,6 +125,10 @@ include 'functions.php';
                                     <video controls autoplay="yes" name="media">
                                         <source src="get-file.php?file=<?php echo $lecture_info['video_url']; ?>" type="video/mp4">
                                     </video>
+
+                                    <div class="desc" style="margin-top: 15px;">
+                                    	<p><?= $lecture_info['description']; ?></p>
+                                    </div>
 
 
                                 </div>
